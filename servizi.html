@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servizi e Valutazione Analitica | Habita Sicilia – Canicattì</title>
+  <meta name="description" content="Valutazioni immobiliari analitiche su dati catastali e fiscali, property scouting e consulenza per compravendite e locazioni a Canicattì e in Sicilia." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #1C2D44; --navy-dark: #131F30; --gold: #C39C56; --gold-light: #D4B475;
+      --ivory: #F6F3EC; --ivory-dark: #EAE4D7; --white: #FFFFFF;
+      --text-main: #222B35; --text-muted: #5A6573; --radius: 8px;
+      --shadow-sm: 0 4px 14px rgba(28, 45, 68, 0.06);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Montserrat', sans-serif; background-color: var(--ivory); color: var(--text-main); line-height: 1.65; }
+    h1, h2, h3, .serif { font-family: 'Playfair Display', serif; }
+    a { text-decoration: none; color: inherit; }
+    .container { width: 100%; max-width: 1180px; margin: 0 auto; padding: 0 22px; }
+
+    .topbar { background: var(--navy-dark); color: var(--ivory); font-size: 0.8rem; padding: 8px 0; border-bottom: 1px solid rgba(195,156,86,0.25); }
+    .topbar .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+    .topbar span strong { color: var(--gold); }
+    .topbar-right { display: flex; align-items: center; gap: 16px; }
+    .lang-btn { background: transparent; border: 1px solid rgba(195,156,86,0.4); color: var(--ivory); font-size: 0.72rem; font-weight: 700; padding: 3px 8px; border-radius: 4px; cursor: pointer; }
+    .lang-btn.active, .lang-btn:hover { background: var(--gold); color: var(--navy-dark); }
+
+    header { background: var(--navy); color: var(--white); position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 20px rgba(0,0,0,0.18); }
+    .navbar { display: flex; justify-content: space-between; align-items: center; padding: 14px 0; gap: 16px; }
+    .brand { display: flex; align-items: center; gap: 12px; }
+    .monogram { width: 46px; height: 46px; border: 2px solid var(--gold); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: var(--gold); }
+    .brand-title { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; letter-spacing: 1.5px; display: block; line-height: 1.1; }
+    .brand-sub { font-size: 0.68rem; color: var(--gold); letter-spacing: 1px; text-transform: uppercase; }
+    .nav-menu { display: flex; align-items: center; gap: 18px; list-style: none; }
+    .nav-menu a { font-size: 0.84rem; font-weight: 500; color: var(--ivory); white-space: nowrap; }
+    .nav-menu a:hover, .nav-menu a.active { color: var(--gold); }
+    .btn-gold { background: var(--gold); color: var(--navy-dark) !important; font-weight: 600 !important; padding: 10px 18px; border-radius: var(--radius); display: inline-block; border: none; cursor: pointer; }
+    .btn-gold:hover { background: var(--gold-light); }
+
+    .banner { background: linear-gradient(135deg, var(--navy-dark), var(--navy)); color: var(--white); padding: 60px 0; border-bottom: 3px solid var(--gold); }
+    .banner h1 { font-size: clamp(2rem, 3.8vw, 2.8rem); margin-bottom: 12px; }
+    .banner h1 span { color: var(--gold); font-style: italic; }
+    .banner p { color: var(--ivory-dark); max-width: 720px; font-size: 1rem; }
+
+    .section { padding: 70px 0; }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 28px; }
+    .srv-card { background: var(--white); padding: 32px; border-radius: 10px; box-shadow: var(--shadow-sm); border-top: 4px solid var(--gold); display: flex; flex-direction: column; }
+    .srv-tag { font-size: 0.75rem; font-weight: 700; color: var(--gold); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+    .srv-card h2 { font-size: 1.45rem; color: var(--navy); margin-bottom: 12px; }
+    .srv-card p { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 16px; flex: 1; }
+    .srv-list { list-style: none; margin-bottom: 20px; font-size: 0.86rem; }
+    .srv-list li { padding-left: 20px; position: relative; margin-bottom: 8px; }
+    .srv-list li::before { content: "•"; position: absolute; left: 0; color: var(--gold); font-weight: 700; }
+
+    .steps-box { background: var(--navy); color: var(--white); padding: 55px 40px; border-radius: 12px; margin-top: 50px; }
+    .steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; margin-top: 30px; }
+    .step-item { background: rgba(255,255,255,0.05); padding: 22px; border-radius: 8px; border-left: 3px solid var(--gold); }
+    .step-num { color: var(--gold); font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; margin-bottom: 6px; }
+    .step-item h3 { font-size: 1.08rem; margin-bottom: 8px; }
+    .step-item p { font-size: 0.84rem; color: var(--ivory-dark); }
+
+    footer { background: var(--navy-dark); color: var(--ivory-dark); padding: 42px 0 24px; border-top: 3px solid var(--gold); text-align: center; font-size: 0.84rem; }
+    .whatsapp-float { position: fixed; bottom: 24px; right: 24px; background: #25D366; color: #FFF; padding: 13px 20px; border-radius: 50px; font-weight: 700; font-size: 0.88rem; box-shadow: 0 6px 20px rgba(0,0,0,0.25); z-index: 999; }
+    @media (max-width: 960px) { .nav-menu { display: none; } }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <span>Operativi a <strong>Canicattì (AG) e in Sicilia</strong> • Esperienza immobiliare dal <strong>2008</strong></span>
+      <div class="topbar-right">
+        <a href="mailto:info@habitasicilia.it">info@habitasicilia.it</a>
+        <a href="tel:+393292422874">+39 329 242 2874</a>
+        <div>
+          <button class="lang-btn active" id="btn-it" onclick="setLanguage('it')">🇮🇹 IT</button>
+          <button class="lang-btn" id="btn-en" onclick="setLanguage('en')">🇬🇧 EN</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="brand">
+        <div class="monogram">HS</div>
+        <div>
+          <span class="brand-title">HABITA SICILIA</span>
+          <span class="brand-sub">Dimore &amp; Dintorni • Salvatore La Porta</span>
+        </div>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="immobili.html">Catalogo Annunci</a></li>
+        <li><a href="servizi.html" class="active">Servizi &amp; Metodo</a></li>
+        <li><a href="international.html">International Buyers</a></li>
+        <li><a href="contatti.html">Contatti</a></li>
+        <li><a href="https://wa.me/393292422874?text=Buongiorno%20Salvatore,%20vorrei%20informazioni%20sui%20tuoi%20servizi" target="_blank" class="btn-gold">Contatto Diretto</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="banner">
+    <div class="container">
+      <h1 data-it="Consulenza Immobiliare <span>Analitica</span>" data-en="<span>Analytical</span> Real Estate Advisory">Consulenza Immobiliare <span>Analitica</span></h1>
+      <p data-it="Dalla valutazione basata su dati catastali e fiscali reali alla ricerca mirata dell'immobile ideale: un metodo rigoroso per proteggere il tuo patrimonio a Canicattì e in Sicilia." data-en="From data-driven cadastral and fiscal valuations to targeted property scouting: a rigorous method to protect your assets in Sicily.">
+        Dalla valutazione basata su dati catastali e fiscali reali alla ricerca mirata dell'immobile ideale: un metodo rigoroso per proteggere il tuo patrimonio a Canicattì e in Sicilia.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="services-grid">
+        <div class="srv-card">
+          <span class="srv-tag">Per Chi Vende o Affitta</span>
+          <h2>Valutazione Tecnico-Finanziaria</h2>
+          <p>Analizziamo il tuo immobile con gli stessi criteri usati dagli istituti bancari e dagli investitori professionali, evitando prezzi fuori mercato che bloccano la vendita.</p>
+          <ul class="srv-list">
+            <li>Analisi visura catastale, rendita e valore fiscale al rogito</li>
+            <li>Calcolo della redditività netta reale (IMU, IRPEF, cedolare)</li>
+            <li>Incarichi mirati a tempo breve senza spese anticipate</li>
+            <li>Presentazione riservata a clienti già profilati</li>
+          </ul>
+          <a href="https://wa.me/393292422874?text=Buongiorno%20Salvatore,%20vorrei%20richiedere%20una%20valutazione%20tecnica%20del%20mio%20immobile" target="_blank" class="btn-gold" style="text-align:center;">Richiedi una Valutazione</a>
+        </div>
+
+        <div class="srv-card">
+          <span class="srv-tag">Per Chi Compra o Investe</span>
+          <h2>Property Scouting &amp; Due Diligence</h2>
+          <p>Cerchiamo sul mercato — anche fuori dai canali pubblicitari tradizionali — l'appartamento, la villetta o il locale commerciale adatto alle tue esigenze.</p>
+          <ul class="srv-list">
+            <li>Ricerca attiva su tutto il territorio di Canicattì e provincia</li>
+            <li>Controllo preventivo di conformità urbanistica e catastale</li>
+            <li>Analisi di convenienza per investimenti a reddito</li>
+            <li>Assistenza fino alla stipula dell'atto notarile</li>
+          </ul>
+          <a href="https://wa.me/393292422874?text=Buongiorno%20Salvatore,%20vorrei%20affidarti%20una%20ricerca%20immobiliare" target="_blank" class="btn-gold" style="text-align:center;">Attiva una Ricerca</a>
+        </div>
+
+        <div class="srv-card">
+          <span class="srv-tag">Commerciale &amp; Imprese</span>
+          <h2>Sviluppo Locali &amp; Magazzini</h2>
+          <p>Supportiamo aziende, studi professionali e attività commerciali nell'individuazione di spazi ad alta visibilità o nell'acquisizione di immobili strumentali.</p>
+          <ul class="srv-list">
+            <li>Mappatura arterie principali di Canicattì</li>
+            <li>Verifica contratti commerciali e diritti di prelazione (L. 392/78)</li>
+            <li>Analisi costi di adeguamento e imposte di registro</li>
+            <li>Trattative riservate tra proprietà e investitori</li>
+          </ul>
+          <a href="https://wa.me/393292422874?text=Buongiorno%20Salvatore,%20cerco%20consulenza%20per%20un%20immobile%20commerciale" target="_blank" class="btn-gold" style="text-align:center;">Consulenza Commerciale</a>
+        </div>
+      </div>
+
+      <div class="steps-box">
+        <h2 class="serif" style="font-size: 1.9rem;">Come Lavoriamo: 4 Passaggi Chiari</h2>
+        <div class="steps-grid">
+          <div class="step-item">
+            <div class="step-num">01. Ascolto</div>
+            <h3>Analisi degli Obiettivi</h3>
+            <p>Definiamo insieme tempi, budget, caratteristiche tecniche e priorità reali dell'operazione.</p>
+          </div>
+          <div class="step-item">
+            <div class="step-num">02. Verifica</div>
+            <h3>Check Documentale</h3>
+            <p>Controlliamo visure, planimetrie e vincoli contrattuali prima di avviare qualsiasi trattativa.</p>
+          </div>
+          <div class="step-item">
+            <div class="step-num">03. Incrocio</div>
+            <h3>Matching Mirato</h3>
+            <p>Abbiniamo l'immobile agli acquirenti o conduttori più qualificati del nostro database attivo.</p>
+          </div>
+          <div class="step-item">
+            <div class="step-num">04. Chiusura</div>
+            <h3>Tutela fino al Rogito</h3>
+            <p>Coordiniamo tecnici, banche e notaio per arrivare alla firma in totale serenità.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p><strong>HABITA SICILIA – Dimore &amp; Dintorni</strong> di Salvatore La Porta • Consulenza Immobiliare &amp; Property Scouting a Canicattì (AG)</p>
+      <p style="margin-top: 6px; color: #94A3B8;">Email: info@habitasicilia.it • Tel: +39 329 242 2874 • © 2026 Tutti i diritti riservati</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/393292422874?text=Buongiorno%20Salvatore,%20ti%20contatto%20dal%20sito%20habitasicilia.it" target="_blank" class="whatsapp-float">💬 Scrivimi su WhatsApp</a>
+
+  <script>
+    function setLanguage(lang) {
+      document.getElementById('btn-it').classList.toggle('active', lang === 'it');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+      document.querySelectorAll('[data-it]').forEach(el => el.innerHTML = el.getAttribute('data-' + lang));
+    }
+  </script>
+</body>
+</html>
