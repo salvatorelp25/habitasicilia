@@ -54,18 +54,18 @@ const HABITA_LISTINGS = [
     Piano: "1° piano (senza ascensore)",
     Descrizione: "In posizione centrale e particolarmente ricercata nei pressi del Liceo Classico, proponiamo in vendita luminoso appartamento situato al 1° piano in contesto tranquillo e ben servito, subito abitabile.\n\nComposizione interna:\n• Ampio ingresso/soggiorno climatizzato con porta-finestra sul balcone e porta blindata\n• Cucina abitabile luminosa con zona pranzo e doppio punto luce\n• Spaziosa camera da letto matrimoniale con uscita sul balcone\n• Seconda camera da letto finestrata\n• Bagno finestrato con box doccia\n• Comodo ripostiglio interno scaffalato\n• Riscaldamento autonomo con termosifoni.",
     PuntiForza: "Posizione centrale ricercatissima (Zona Liceo Classico) • Primo piano comodo • Subito abitabile con clima e riscaldamento autonomo • Ottimo sia come abitazione principale sia per investimento.",
-    FotoURL: "img/hs004/WhatsApp Image 2026-11-19 at 20.31.56.jpeg",
+    FotoURL: "hs004/WhatsApp Image 2026-11-19 at 20.31.56.jpeg",
     Galleria: [
-      "img/hs004/WhatsApp Image 2026-11-19 at 20.31.56.jpeg",
-      "img/hs004/WhatsApp Image 2026-11-19 at 20.31.57 (1).jpeg",
-      "img/hs004/WhatsApp Image 2026-11-19 at 20.31.57.jpeg",
-      "img/hs004/WhatsApp Image 2026-11-19 at 20.31.57 (2).jpg",
-      "img/hs004/WhatsApp Image 2026-11-19 at 20.31.56 (1).jpg",
-      "img/hs004/WhatsApp Image 2026-11-19 at 20.31.56 (4).jpeg",
-      "img/hs004/WhatsApp Image 2026-11-19 at 20.31.57 (3).jpeg",
-      "img/hs004/WhatsApp Image 2026-11-19 at 20.31.57 (4).jpeg",
-      "img/hs004/WhatsApp Image 2026-11-19 at 20.31.56 (2).jpeg",
-      "img/hs004/WhatsApp Image 2026-11-19 at 20.31.56 (3).jpeg"
+      "hs004/WhatsApp Image 2026-11-19 at 20.31.56.jpeg",
+      "hs004/WhatsApp Image 2026-11-19 at 20.31.57 (1).jpeg",
+      "hs004/WhatsApp Image 2026-11-19 at 20.31.57.jpeg",
+      "hs004/WhatsApp Image 2026-11-19 at 20.31.57 (2).jpg",
+      "hs004/WhatsApp Image 2026-11-19 at 20.31.56 (1).jpg",
+      "hs004/WhatsApp Image 2026-11-19 at 20.31.56 (4).jpeg",
+      "hs004/WhatsApp Image 2026-11-19 at 20.31.57 (3).jpeg",
+      "hs004/WhatsApp Image 2026-11-19 at 20.31.57 (4).jpeg",
+      "hs004/WhatsApp Image 2026-11-19 at 20.31.56 (2).jpeg",
+      "hs004/WhatsApp Image 2026-11-19 at 20.31.56 (3).jpeg"
     ]
   },
   {
@@ -82,19 +82,19 @@ const HABITA_LISTINGS = [
     Piano: "Terra + 1° Piano + Sottotetto",
     Descrizione: "Soluzione indipendente da terra a cielo sviluppata su due livelli abitativi (Piano Terra 70,66 mq netti + Piano Primo 76,88 mq netti) oltre piano sottotetto/veranda e garage privato al piano terra.\n\nComposizione dettagliata:\n• Piano Terra (~71 mq netti + garage): doppio ingresso pedonale indipendente, soggiorno, 2 camere, cucina, bagno, ripostiglio e garage privato di 14,44 mq (altezza 3,75 m) con serranda.\n• Piano Primo (~77 mq netti): cucina abitabile di oltre 21 mq, luminoso salone di 20 mq, camera matrimoniale, seconda camera, bagno finestrato e balcone panoramico di 19 mq con ripostiglio.\n• Piano Sottotetto: vano lavanderia e veranda coperta finestrata.\n• Dotata di riscaldamento autonomo con termosifoni.",
     PuntiForza: "Doppio ingresso indipendente • 2 cucine e doppi servizi (ideale anche per 2 nuclei familiari o abitazione + studio) • Garage privato al piano terra • Ottimo rapporto prezzo/metratura.",
-    FotoURL: "img/hs002/04_STANZA_GRANDE_A.jpg",
+    FotoURL: "hs002/04_STANZA_GRANDE_A.jpg",
     Galleria: [
-      "img/hs002/04_STANZA_GRANDE_A.jpg",
-      "img/hs002/05_STANZA_GRANDE_B.jpg",
-      "img/hs002/03_STANZA_CON_BALCONE.jpg",
-      "img/hs002/06_AMBIENTE_CUCINA_A.jpg",
-      "img/hs002/07_AMBIENTE_CUCINA_B.jpg",
-      "img/hs002/08_SOGGIORNO.jpg",
-      "img/hs002/09_CAMERA.jpg",
-      "img/hs002/10_STANZA_LUNGA.jpg",
-      "img/hs002/11_CORRIDOIO.jpg",
-      "img/hs002/12_VANO_SCALA.jpg",
-      "img/hs002/15_VERANDA.jpg"
+      "hs002/04_STANZA_GRANDE_A.jpg",
+      "hs002/05_STANZA_GRANDE_B.jpg",
+      "hs002/03_STANZA_CON_BALCONE.jpg",
+      "hs002/06_AMBIENTE_CUCINA_A.jpg",
+      "hs002/07_AMBIENTE_CUCINA_B.jpg",
+      "hs002/08_SOGGIORNO.jpg",
+      "hs002/09_CAMERA.jpg",
+      "hs002/10_STANZA_LUNGA.jpg",
+      "hs002/11_CORRIDOIO.jpg",
+      "hs002/12_VANO_SCALA.jpg",
+      "hs002/15_VERANDA.jpg"
     ]
   },
   {
