@@ -22,22 +22,22 @@ const HABITA_LISTINGS = [
     Piano: "2° piano (piccolo condominio, senza ascensore)",
     Descrizione: "In posizione centrale e servitissima a pochi passi dal corso principale, proponiamo in vendita un luminoso appartamento situato al 2° piano in un piccolo contesto condominiale tranquillo con pochi condomini (senza ascensore e con spese condominiali minime), libero su tre lati e dotato di ampie balconate perimetrali.\n\nComposizione interna:\n• Ingresso su ampio corridoio finestrato\n• Salone doppio molto luminoso con doppia porta-finestra sul balcone\n• Secondo ambiente soggiorno / tinello con uscita sul balcone\n• Cucina abitabile climatizzata con accesso al balcone\n• Due grandi camere da letto balconate\n• Bagno principale finestrato con vasca + secondo servizio / lavanderia finestrato\n• Riscaldamento autonomo con termosifoni.",
     PuntiForza: "Piccolo condominio con pochi condomini e spese minime • Tripla esposizione solare • Doppi servizi finestrati • Posizione centrale a pochi metri dal corso principale • Prezzo trattabile.",
-    FotoURL: "img/hs003/IMG_20261014_153725.jpg",
+    FotoURL: "img/IMG_20261014_153725.jpg",
     Galleria: [
-      "img/hs003/IMG_20261014_153725.jpg",
-      "img/hs003/IMG_20261014_153736.jpg",
-      "img/hs003/IMG_20261014_154101.jpg",
-      "img/hs003/IMG_20261014_154118.jpg",
-      "img/hs003/IMG_20261014_153852.jpg",
-      "img/hs003/IMG_20261014_153923.jpg",
-      "img/hs003/IMG_20261014_153945.jpg",
-      "img/hs003/IMG_20261014_153950.jpg",
-      "img/hs003/IMG_20261014_154000.jpg",
-      "img/hs003/IMG_20261014_153822.jpg",
-      "img/hs003/IMG_20261014_153807.jpg",
-      "img/hs003/IMG_20261014_154024.jpg",
-      "img/hs003/IMG_20261014_154154.jpg",
-      "img/hs003/IMG_20261014_154200.jpg"
+      "img/IMG_20261014_153725.jpg",
+      "img/IMG_20261014_153736.jpg",
+      "img/IMG_20261014_154101.jpg",
+      "img/IMG_20261014_154118.jpg",
+      "img/IMG_20261014_153852.jpg",
+      "img/IMG_20261014_153923.jpg",
+      "img/IMG_20261014_153945.jpg",
+      "img/IMG_20261014_153950.jpg",
+      "img/IMG_20261014_154000.jpg",
+      "img/IMG_20261014_153822.jpg",
+      "img/IMG_20261014_153807.jpg",
+      "img/IMG_20261014_154024.jpg",
+      "img/IMG_20261014_154154.jpg",
+      "img/IMG_20261014_154200.jpg"
     ]
   },
   {
@@ -145,8 +145,8 @@ const HABITA_LISTINGS = [
     Piano: "Piano Terra",
     Descrizione: "Per imprenditori e attività già avviate selezioniamo locali commerciali fronte strada oppure magazzini al piano terra (da 120 mq fino a 500 mq, anche da adeguare) con regolare documentazione urbanistica e altezze idonee.",
     PuntiForza: "Acquirenti e conduttori già referenziati • Sopralluogo immediato e valutazione analitica gratuita per i proprietari.",
-    FotoURL: IMG_RIC,
-    Galleria: [IMG_RIC]
+    FotoURL: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+    Galleria: ["https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"]
   },
   {
     ID: "RIC-02",
@@ -162,8 +162,8 @@ const HABITA_LISTINGS = [
     Piano: "Attici / Villette / Piani intermedi",
     Descrizione: "Ricerchiamo per clienti referenziati con capacità finanziaria verificata attici panoramici, appartamenti recenti o ristrutturati e villette indipendenti ad alta efficienza energetica (cappotto termico, infissi a taglio termico, impianto fotovoltaico/pompa di calore) nelle zone servite di Canicattì e prima periferia.",
     PuntiForza: "Acquirenti già profilati e referenziati • Valutazione analitica gratuita • Massima riservatezza nella trattativa.",
-    FotoURL: IMG_RIC,
-    Galleria: [IMG_RIC]
+    FotoURL: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+    Galleria: ["https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"]
   },
   {
     ID: "RIC-03",
@@ -179,7 +179,7 @@ const HABITA_LISTINGS = [
     Piano: "Indipendente",
     Descrizione: "Per famiglie referenziate con budget definito selezioniamo villette indipendenti sia in città/prima periferia sia nelle contrade di Canicattì, con giardino o spazio esterno carrabile e regolare conformità urbanistica.",
     PuntiForza: "Acquirenti con liquidità pronta • Stima tecnica preventiva gratuita.",
-    FotoURL: IMG_RIC,
-    Galleria: [IMG_RIC]
+    FotoURL: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+    Galleria: ["https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"]
   }
 ];
