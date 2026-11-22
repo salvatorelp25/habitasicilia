@@ -20,19 +20,138 @@
     a { text-decoration: none; color: inherit; }
     .container { width: 100%; max-width: 1180px; margin: 0 auto; padding: 0 22px; }
 
-    .topbar { background: var(--navy-dark); color: var(--ivory); font-size: 0.8rem; padding: 8px 0; border-bottom: 1px solid rgba(195,156,86,0.25); }
-    .topbar .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
-    .topbar span strong { color: var(--gold); }
-    header { background: var(--navy); color: var(--white); position: sticky; top: 0; z-index: 1000; }
-    .navbar { display: flex; justify-content: space-between; align-items: center; padding: 14px 0; }
+    
+    /* TOP BAR & HEADER UNIFICATI */
+    .topbar {
+      background: var(--navy-dark);
+      color: #D9D3C7;
+      font-size: 0.74rem;
+      padding: 7px 20px;
+      border-bottom: 1px solid rgba(195, 156, 86, 0.25);
+    }
+    .topbar-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .topbar-links {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .topbar-links a:hover { color: var(--gold); }
+    .wa-top-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: rgba(37, 211, 102, 0.14);
+      border: 1px solid rgba(37, 211, 102, 0.45);
+      color: #6EE79E !important;
+      padding: 2px 9px;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 0.72rem;
+      transition: background 0.2s;
+    }
+    .wa-top-link:hover { background: rgba(37, 211, 102, 0.25); }
+    .social-icon-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      border: 1px solid rgba(195, 156, 86, 0.45);
+      color: var(--gold-light) !important;
+      background: rgba(255, 255, 255, 0.04);
+      transition: all 0.2s;
+    }
+    .social-icon-btn:hover {
+      background: var(--gold);
+      color: var(--navy-dark) !important;
+      border-color: var(--gold);
+    }
+    .lang-switch { display: inline-flex; gap: 5px; margin-left: 4px; }
+    .lang-btn {
+      background: transparent;
+      border: 1px solid rgba(195, 156, 86, 0.5);
+      color: #EAE4D7;
+      font-size: 0.68rem;
+      font-weight: 600;
+      padding: 2px 7px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .lang-btn.active {
+      background: var(--gold);
+      color: var(--navy-dark);
+      border-color: var(--gold);
+    }
+    header {
+      background: var(--navy);
+      color: var(--white);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 2px solid var(--gold);
+      box-shadow: 0 3px 12px rgba(0,0,0,0.16);
+    }
+    .nav-container {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
     .brand { display: flex; align-items: center; gap: 12px; }
-    .monogram { width: 46px; height: 46px; border: 2px solid var(--gold); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: var(--gold); }
-    .brand-title { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; letter-spacing: 1.5px; display: block; line-height: 1.1; }
-    .brand-sub { font-size: 0.68rem; color: var(--gold); letter-spacing: 1px; text-transform: uppercase; }
-    .nav-menu { display: flex; align-items: center; gap: 18px; list-style: none; }
-    .nav-menu a { font-size: 0.84rem; font-weight: 500; color: var(--ivory); }
-    .nav-menu a:hover, .nav-menu a.active { color: var(--gold); }
-    .btn-gold { background: var(--gold); color: var(--navy-dark) !important; font-weight: 600 !important; padding: 10px 18px; border-radius: var(--radius); display: inline-block; }
+    .brand-logo-img {
+      height: 54px;
+      width: auto;
+      border-radius: 6px;
+      padding: 0;
+      border: 1.5px solid rgba(195, 156, 86, 0.75);
+      object-fit: cover;
+      display: block;
+    }
+    .brand-text strong {
+      display: block;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.12rem;
+      letter-spacing: 0.5px;
+      color: var(--white);
+    }
+    .brand-text span {
+      display: block;
+      font-size: 0.65rem;
+      color: var(--gold-light);
+      letter-spacing: 0.9px;
+      text-transform: uppercase;
+    }
+    nav { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+    nav a { font-size: 0.81rem; font-weight: 500; color: #EAE4D7; transition: color 0.2s; }
+    nav a:hover, nav a.active { color: var(--gold); }
+    .btn-gold {
+      background: var(--gold);
+      color: var(--navy-dark) !important;
+      font-weight: 700;
+      padding: 9px 16px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      transition: background 0.2s, transform 0.15s;
+      display: inline-block;
+      border: none;
+      cursor: pointer;
+    }
+    .btn-gold:hover { background: var(--gold-light); transform: translateY(-1px); }
+
 
     .hero-intl {
       background: linear-gradient(135deg, rgba(19,31,48,0.92), rgba(28,45,68,0.86)),
@@ -52,37 +171,54 @@
     .cta-banner { background: var(--navy); color: var(--white); padding: 48px; border-radius: 12px; margin-top: 48px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; }
     footer { background: var(--navy-dark); color: var(--ivory-dark); padding: 42px 0 24px; border-top: 3px solid var(--gold); text-align: center; font-size: 0.84rem; }
     .whatsapp-float { position: fixed; bottom: 24px; right: 24px; background: #25D366; color: #FFF; padding: 13px 20px; border-radius: 50px; font-weight: 700; font-size: 0.88rem; z-index: 999; }
-    @media (max-width: 960px) { .nav-menu { display: none; } }
+    
   </style>
 </head>
 <body>
+    <!-- TOP BAR CON WHATSAPP, FACEBOOK E INSTAGRAM -->
   <div class="topbar">
-    <div class="container">
-      <span><strong>Habita Sicilia International Desk</strong> • Canicattì, Agrigento &amp; Southern Sicily</span>
-      <div>
-        <a href="mailto:info@habitasicilia.it" style="margin-right:16px;">info@habitasicilia.it</a>
+    <div class="topbar-inner">
+      <span>Habita Sicilia International Desk • Canicattì, Agrigento &amp; Southern Sicily</span>
+      <div class="topbar-links">
+        <a href="mailto:info@habitasicilia.it">info@habitasicilia.it</a>
         <a href="tel:+393292422874">+39 329 242 2874</a>
+        <a href="https://wa.me/393292422874?text=Hello%20Salvatore,%20I%20contact%20you%20from%20habitasicilia.it" target="_blank" rel="noopener" class="wa-top-link" aria-label="WhatsApp">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/></svg>
+          WhatsApp
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100063546462516" target="_blank" rel="noopener" class="social-icon-btn" title="Facebook" aria-label="Pagina Facebook Habita Sicilia">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/laportatoto/" target="_blank" rel="noopener" class="social-icon-btn" title="Instagram" aria-label="Profilo Instagram Habita Sicilia">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <div class="lang-switch">
+          <a href="index.html" class="lang-btn">IT</a><button class="lang-btn active">EN</button>
+        </div>
       </div>
     </div>
   </div>
 
+  <!-- HEADER CON LOGO UFFICIALE -->
   <header>
-    <div class="container navbar">
+    <div class="nav-container">
       <a href="index.html" class="brand">
-        <div class="monogram">HS</div>
-        <div>
-          <span class="brand-title">HABITA SICILIA</span>
-          <span class="brand-sub">Dimore &amp; Dintorni • Salvatore La Porta</span>
+        <img src="logo-completo.png" alt="Habita Sicilia - Dimore & Dintorni" class="brand-logo-img">
+        <div class="brand-text">
+          <strong>HABITA SICILIA</strong>
+          <span>Dimore &amp; Dintorni • Salvatore La Porta</span>
         </div>
       </a>
-      <ul class="nav-menu">
-        <li><a href="index.html">Home (IT)</a></li>
-        <li><a href="immobili.html">Property Catalog</a></li>
-        <li><a href="servizi.html">Services</a></li>
-        <li><a href="international.html" class="active">International Buyers</a></li>
-        <li><a href="contatti.html">Contact</a></li>
-        <li><a href="https://wa.me/393292422874?text=Hello%20Salvatore,%20I%20am%20interested%20in%20buying%20property%20in%20Sicily" target="_blank" class="btn-gold">WhatsApp Desk</a></li>
-      </ul>
+      <nav>
+        
+        <a href="index.html">Home (IT)</a>
+        <a href="immobili.html">Property Catalog</a>
+        <a href="servizi.html">Services &amp; Method</a>
+        <a href="international.html" class="active">International Buyers</a>
+        <a href="contatti.html">Contact</a>
+        <a href="https://wa.me/393292422874?text=Hello%20Salvatore,%20I%20contact%20you%20from%20habitasicilia.it" target="_blank" rel="noopener" class="btn-gold">WhatsApp Desk</a>
+        
+      </nav>
     </div>
   </header>
 
